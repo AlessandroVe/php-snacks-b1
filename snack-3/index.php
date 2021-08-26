@@ -55,7 +55,7 @@ stampa ogni data con i relativi post -->
         
         <?php 
             for($i=0; $i<count($posts['10/01/2019']) ; $i++ ){
-               for($x=0; $i<count($posts['10/01/2019'][$i]) ; $x++ ){
+               for($x=0; $x<count($posts['10/01/2019'][$i]) ; $x++ ){
                    echo $posts['10/01/2019'][$i][$x];
                }
             };
