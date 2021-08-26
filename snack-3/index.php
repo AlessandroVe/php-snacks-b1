@@ -51,13 +51,16 @@ stampa ogni data con i relativi post -->
         ];
     ?>
     <div>
-        <?php echo array_search($posts['10/01/2019'],$posts) . "<br>";?>
+        
         
         <?php 
-            for($i=0; $i<count($posts['10/01/2019']) ; $i++ ){
-                for($x=0; $x<count($posts['10/01/2019'][$i]) ; $x++ ){
-                   echo $posts['10/01/2019'][$x]["title"] . "<br>";
-                } 
+            $keys = array_keys($posts);
+
+            for($i=0; $i<count($posts) ; $i++ ){
+                echo $keys[$i]."<br>";
+                for($x=0; $x<count($posts[$keys[$i]]) ; $x++ ){
+                    echo $posts[$keys[$i]][$x]["title"] . "<br>";
+                };
             };
         ?>
         
