@@ -25,6 +25,19 @@
                 "voti" => [10,7,6,3]
             ]
         ];
+
+
+        for($i=0; $i<count($classe) ; $i++){
+            /* media dei voti */
+            $media = array_sum($classe[x]['voti']) / count($classe[x]['voti']);
+            /* stampo il tutto */
+            echo "Name: {$classe[x]['nome'] ";
+        }
+
+
+
+
+
     ?>
 </body>
 </html>
