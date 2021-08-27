@@ -31,8 +31,8 @@
             /* media dei voti */
             $media = array_sum($classe[x]['voti']) / count($classe[x]['voti']);
             /* stampo il tutto */
-            echo "Name: {$classe[x]['nome'] ";
-        }
+            echo "Name:{$classe[x]['nome']";
+        };
 
 
 
