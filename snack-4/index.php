@@ -29,9 +29,9 @@
 
         for($i=0; $i<count($classe) ; $i++){
             /* media dei voti */
-            $media = array_sum($classe[x]['voti']) / count($classe[x]['voti']);
+            $media = array_sum($classe[$i]['voti']) / count($classe[$i]['voti']);
             /* stampo il tutto */
-            echo "Name:{$classe[x]['nome']";
+            echo "Name:{$classe[$i]['nome']} <br> Surname : {$classe[$i]['cognome']} <br> Media Voti: {$media} <br> <hr>  ";
         };
 
 
