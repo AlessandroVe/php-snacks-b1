@@ -8,7 +8,44 @@
 </head>
 <body>
     <?php
-        
+          $db = [
+            'teachers' => [
+                [
+                    'name' => 'Michele',
+                    'lastname' => 'Papagni'
+                ],
+                [
+                    'name' => 'Fabio',
+                    'lastname' => 'Forghieri'
+                ]
+            ],
+            'pm' => [
+                [
+                    'name' => 'Roberto',
+                    'lastname' => 'Marazzini'
+                ],
+                [
+                    'name' => 'Federico',
+                    'lastname' => 'Pellegrini'
+                ]
+            ]
+        ];
+     
     ?>
+    <div style = "background-color : lightgray">
+        
+        <?php
+            for($i = 0 ; $i < count($db['teachers']); $i++){
+                echo "{$db['teachers'][$i][name]} {$db['teachers'][$i][lastname]} <br>";
+            }
+        ?>
+    </div>
+    <div style = "background-color : lightgreen">
+        <?php
+            for($i = 0 ; $i < count($db['pm']); $i++){
+                echo "{$db['pm'][$i][name]} {$db['pm'][$i][lastname]} <br>";
+            };         
+        ?>
+    </div>
 </body>
 </html>
